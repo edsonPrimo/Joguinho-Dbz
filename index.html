@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon ball</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p id="primeiroLutador">Escolha seu jogador </p>
+        <div class="caixaGrandeGoku">
+        <div id = "vidaGokuHeader" class="caixaPequenaGoku"></div>
+        </div>
+        
+
+        <p class="textoCell">Cell</p>
+        <div class="container2"> 
+        <div id = "vidaCellHeader" class="skills2"></div>
+        </div>
+
+    
+    </header>
+    <main>
+        <div class='fotineo'> 
+            <img id="lutadorfoto" src="" alt="">
+
+            <img id=cellFoto src="https://i.imgur.com/5w5jPxF.gif" alt="">
+
+        </div>
+
+
+         <div class="lista">  
+            <select name="" id="escolha" onchange="escolha()">
+                <option value=""></option>
+                <option value="Goku">Goku</option>
+                <option value="Vegeta">Vegeta (não está pronto)</option>
+                <option value="Gohan">Gohan (não está pronto)</option>
+            </select>
+        </div>     
+        
+        <div class="fight">
+            <input  type="image" src="https://i.imgur.com/CmE5nfY.gif" alt="" onclick="fight()">
+        </div>
+    </main>
+
+
+</body>
+<script src="script.js"></script>
+</html>
