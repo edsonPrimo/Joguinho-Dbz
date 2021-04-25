@@ -35,13 +35,14 @@
             <select name="" id="escolha" onchange="escolha()">
                 <option value=""></option>
                 <option value="Goku">Goku</option>
-                <option value="Vegeta">Vegeta (não está pronto)</option>
-                <option value="Gohan">Gohan (não está pronto)</option>
+                <option value="Vegeta" disabled>Vegeta</option>
+                <option value="Gohan" disabled>Gohan</option>
             </select>
         </div>     
         
-        <div class="fight">
-            <input  type="image" src="https://i.imgur.com/CmE5nfY.gif" alt="" onclick="fight()">
+        <div class="fight" >
+            <input id="fight" type="image" src="https://i.imgur.com/CmE5nfY.gif" alt="" onclick="fight()">
+            <p id="resultado"></p>
         </div>
     </main>
 
