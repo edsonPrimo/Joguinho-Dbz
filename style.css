@@ -6,20 +6,19 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     text-shadow: 2px 2px #d4c8c8;
-
+}
+a:hover{
+    text-shadow: 3px 3px #d4c8c8;
 }
 
 .fotineo {
     width: 70%;
     margin: 0px auto;
-    
-
 }
 .fotineo img {
    width: 25%;
    position: fixed;
     top: 50%;
-    
 }
 #cellFoto {
     width: 13%;
@@ -38,14 +37,22 @@ body {
     width: 20%;
     text-align: center;
     margin: 0 auto;
-
+    justify-content: space-around;
 }
 
+#fight {
+    display: none;
+}
 
-.fight:hover {
+#fight:hover {
     transform: scale(1.1);
 }
 
+
+#resultado{
+    display: none;
+    font-size: 50px;
+}
 
 /* HEADER */
 
@@ -96,10 +103,3 @@ header {
         width: 100%; 
         background-color:  rgb(246, 250, 14);
 }
-    
-
-
-
-
-
-    
