@@ -66,19 +66,20 @@ function fight() {
     cell.vida -= parseInt(Math.random()*15)
     var x = document.getElementById('vidaGokuHeader')
         if (goku.vida <= 0) {
-        goku.vida = 0.1
-        botaofight.style.display = 'none'
-        resultado.innerHTML = cellVence
-        resultado.style.display = 'block'
+            goku.vida = 0.1
+            botaofight.style.display = 'none'
+            resultado.innerHTML = cellVence
+            resultado.style.display = 'block'
         } 
         else if (cell.vida <= 0) {
-        cell.vida = 0.1
-        botaofight.style.display = 'none'
-        resultado.innerHTML = gokuVence
-        resultado.style.display = 'block'    
+            cell.vida = 0.1
+            botaofight.style.display = 'none'
+            resultado.innerHTML = gokuVence
+            resultado.style.display = 'block'    
         }
         else if (cell.vida <= 0 && goku.vida <= 0){
             resultado.innerHTML = empate
+            resultado.style.display = 'block' 
         }
 
     x.style.width = `${goku.vida}%`
