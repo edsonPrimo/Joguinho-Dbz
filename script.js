@@ -51,7 +51,6 @@ function escolha() {
             let escolhido = vegeta.vida
         }
         else if (escolhaLista == ""){
-            let lutadorFoto = document.getElementById ('lutadorfoto')
             botaofight.style.display = 'none'
             location.reload()
         }
