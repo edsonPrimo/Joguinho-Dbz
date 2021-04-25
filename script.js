@@ -24,18 +24,17 @@ const cell = new DBZ ()
     cell.vida = 100;
     cell.ki = 'normal';    
 
-let botãofight = document.getElementById('fight')
+let botaofight = document.getElementById('fight')
 
 function escolha() {
-       let escolhaLista = document.getElementById('escolha').value
+        let escolhaLista = document.getElementById('escolha').value
         if (escolhaLista == goku.nome) {
             let lutadorFoto = document.getElementById ('lutadorfoto')
             lutadorFoto.src = "https://i.imgur.com/AxOOtEw.gif"
             let playerName = document.getElementById('primeiroLutador')
             playerName.innerHTML = goku.nome
             let escolhido = goku.vida
-            botãofight.style.display = 'block'            
-            lutadorFoto.removeAttribute("hidden")   
+            botaofight.style.display = 'block'               
         }
         else if (escolhaLista == gohan.nome) {
             let lutadorFoto = document.getElementById ('lutadorfoto')
@@ -43,7 +42,6 @@ function escolha() {
             let playerName = document.getElementById('primeiroLutador')
             playerName.innerHTML = gohan.nome
             let escolhido = gohan.vida
-            lutadorFoto.removeAttribute("hidden")
         }
         else if (escolhaLista == vegeta.nome) {
             let lutadorFoto = document.getElementById ('lutadorfoto')
@@ -51,12 +49,10 @@ function escolha() {
             let playerName = document.getElementById('primeiroLutador')
             playerName.innerHTML = vegeta.nome
             let escolhido = vegeta.vida
-            lutadorFoto.removeAttribute("hidden")
         }
         else if (escolhaLista == ""){
             let lutadorFoto = document.getElementById ('lutadorfoto')
-            lutadorFoto.setAttribute("hidden", "hidden")
-            botãofight.style.display = 'none'
+            botaofight.style.display = 'none'
             location.reload()
         }
 }    
@@ -72,18 +68,18 @@ function fight() {
     var x = document.getElementById('vidaGokuHeader')
         if (goku.vida <= 0) {
         goku.vida = 0.1
-        botãofight.style.display = 'none'
+        botaofight.style.display = 'none'
         resultado.innerHTML = cellVence
         resultado.style.display = 'block'
         } 
         else if (cell.vida <= 0) {
         cell.vida = 0.1
-        botãofight.style.display = 'none'
+        botaofight.style.display = 'none'
         resultado.innerHTML = gokuVence
         resultado.style.display = 'block'    
         }
         else if (cell.vida <= 0 && goku.vida <= 0){
-
+            resultado.innerHTML = empate
         }
 
     x.style.width = `${goku.vida}%`
@@ -96,5 +92,3 @@ function fight() {
         lutadorFoto.style.width = "16%"        
         } 
 }
-
-   
