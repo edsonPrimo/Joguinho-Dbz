@@ -47,7 +47,9 @@ a:hover{
 #fight:hover {
     transform: scale(1.1);
 }
-
+#fight:active{
+    transform: scale(1.0);
+}
 
 #resultado{
     display: none;
